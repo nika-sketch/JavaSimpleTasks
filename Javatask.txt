@@ -1,0 +1,121 @@
+import acm.program.*;
+import acmx.export.java.util.Scanner;
+
+//////////////
+public class TaskJava extends ConsoleProgram {
+
+	// Creating global variables;
+	private int a;
+	private int b;
+	private int c;
+	private int result;
+	private int sum;
+	private int otherResult;
+
+	
+	public void run() {
+        // Calling for methods in main function
+//		method1();
+		method2();
+    	        method3();
+ 	    result = method2() * method3();
+ 	    println("Multiply of those numbers are: " + result);
+ 	    method4();
+ 	    otherResult = method3() * result;
+ 	    println(otherResult);
+	}
+//	//fisrt method wich returns the input value by user
+//	private void method1() {
+//		 a = readInt("First number: ");
+//		 b = readInt("Second number: ");
+//		 c = readInt("Third number: ");
+//	}
+	//Second method returns last digit of number a
+	private int method2() {
+		a = readInt("Type first number: ");
+		int lastDigit = a % 10;
+		println("The last digit of " + a + " is: " + lastDigit);
+		return lastDigit;
+	}
+	// third method returns first digit of number
+	private int method3() {
+		b = readInt("Type second number: ");
+		int firstDigit = 1;
+		for (int i = 10; i < b; i = i * 10) {
+		    firstDigit = b / i;
+		}
+		
+		println("The first digit of number" + b + " is: " + firstDigit);
+		return firstDigit;
+	}
+	/all return sum of digits in number 
+	private void method4() {
+		c = readInt("Type third number : ");
+		int sum = 0;
+		while (c > 0) {
+			sum = sum + c % 10;
+			c = c / 10;
+		}
+		println("The sum of digits: " + sum);
+	}
+}
+
+
+
+
+
+
+
+//////////////
+creating class
+public class A {
+
+  //global variable
+  int number;
+  String modelName;
+
+  public A(int x, String name) {
+    number = x;
+    modelName = name;
+  }
+
+  public static void main(String[] args) {
+    A myCar = new A(5, "Hello");
+    System.out.println(myCar.number + " " + myCar.modelName);
+  }
+}
+
+
+
+
+/////////////
+	public void run() {
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(x + y);
+		int result = x + 12;
+		System.out.println(result);
+		if (x % 2 == 0) {
+			System.out.println("Even");
+		} else {
+			System.out.println("Odd");
+		}
+	}
+}
+
+
+//////////
+import java.util.Random;
+public class numbers {
+   public static void main(String[] args) {
+      Random rd = new Random(); // creating Random object
+      int[] arr = new int[40];
+      for (int i = 0; i < arr.length; i++) {
+         arr[i] = rd.nextInt(); // storing random integers in an array
+         System.out.println(arr[i]); // printing each array element
+      }
+   }
+}

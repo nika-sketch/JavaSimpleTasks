@@ -68,20 +68,22 @@ public class TaskJava extends ConsoleProgram {
 
 //////////////
 creating class
-public class A {
-
-  //global variable
-  int number;
-  String modelName;
-
-  public A(int x, String name) {
-    number = x;
-    modelName = name;
-  }
-
+class MyClass {
   public static void main(String[] args) {
-    A myCar = new A(5, "Hello");
-    System.out.println(myCar.number + " " + myCar.modelName);
+    Scanner myObj = new Scanner(System.in);
+
+    System.out.println("Enter hello and number:");
+
+    // String input
+    String hello = myObj.nextLine();
+
+    // Numerical input
+    int number = myObj.nextInt();
+    
+
+    // Output input by user
+    System.out.println("Hello: " + hello); 
+    System.out.println("number: " + number);  
   }
 }
 

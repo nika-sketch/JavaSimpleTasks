@@ -1,0 +1,57 @@
+1) 	public void run() {
+		int remainder, sum = 0, temp;
+		int n = readInt();
+		temp = n;
+		for (int i = 0; i < n; i++) {
+			remainder = n % 10;
+			sum = (sum * 10) + remainder;
+			n = n / 10;
+		}
+		if(temp == sum) {
+			println("Palindrome");
+		} else {
+			println("Not palindrome");
+		}
+	}
+}
+
+
+2)  	private int a;
+	private int b;
+	private int c;
+	private int d;
+	private int f;
+	
+	public void run() {
+		int a = readInt("First");
+		int b = readInt("First");
+		int c = readInt("First");
+		int d = readInt("First");
+		int f = readInt("First");
+		check();
+		
+	}
+	
+	private void check() {
+		if (a != b && a != c && a != d && a != f) {
+			println("NO");
+		} else {
+			println("Yes");
+		}
+	}
+}
+
+
+
+3) 	public void run() {
+		int reversed = 0;
+		int num = readInt("Type first number: ");
+	    while(num != 0) {
+	            int digit = num % 10;
+	            reversed = reversed * 10 + digit;
+	            num /= 10;
+	        }
+        println(reversed);
+        println(reversed * reversed);
+	}   
+}

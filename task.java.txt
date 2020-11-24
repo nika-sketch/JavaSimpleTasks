@@ -1,0 +1,157 @@
+public class A {
+
+    private static int a = 10;
+    private static int b = 29;
+    
+    public static void main(String[] args) {
+        method1();
+        method2();
+        method3();
+        method4();
+        method5(a, b);
+        method6(a, b);
+    }
+
+    private static void method1() {
+        System.out.println("Hello OP");
+    }
+
+    private static void method2() {
+        System.out.println(a);
+    }
+
+    private static void method3() {
+        System.out.println(b);
+    }
+
+    private static void method4() {
+        int result = a + b;
+        System.out.println(result);
+    }
+
+    private static int method5(int x, int y) {
+        int result = x + y;
+        return result;
+    }
+
+    private static int method6(int x, int y) {
+        int result = x * y;
+        return result;
+    }
+
+}
+
+
+
+
+public class B {
+
+    private static int a = 33;
+    private static double b = 9.7;
+    private static String s = "#";
+
+    public static void main(String[] args) {
+        method1();
+        method2();
+        method3();
+        method4();
+        method5(a, b);
+        method6(a, b);
+        method7();
+        method8(a);
+    }
+
+    private static void method1() {
+        System.out.println(s);
+    }
+
+    private static void method2() {
+        System.out.println(a);
+    }
+
+    private static void method3() {
+        System.out.println(b);
+    }
+
+    private static void method4() {
+        double result = a - b;
+        System.out.println(result);
+    }
+
+    private static double method5(int a, int b) {
+        return a / b;
+    }
+
+    private static double method6(int a, int b) {
+        return a + b;
+    }
+
+    private static void method7() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Type the number: ");
+        int a = sc.nextInt();
+        System.out.println(a);
+    }
+
+    private static double method8(int b) {
+        return b + 10;
+    }
+}
+
+
+
+
+public class C {
+    Scanner sc = new Scanner(System.in);
+    private static int a = 10;
+    private static int b = 9;
+    private static String h = "@";
+    private static String s = "#";
+
+    public static void main(String[] args) {
+        method1();
+        method2();
+        method3();
+        method4();
+        method5();
+        method6();
+    }
+
+    private static void method1() {
+        System.out.println(a);
+        System.out.println(b);
+    }
+
+    private static void method2() {
+        System.out.println(h);
+        System.out.println(s);
+    }
+
+    private static void method3() {
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
+        System.out.println(a % b);
+    }
+
+    private static void method4() {
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        System.out.println(a);
+    }
+
+    private static void method5() {
+        Scanner sc = new Scanner(System.in);
+        b = sc.nextInt();
+        System.out.println(b);
+    }
+
+    private static void method6() {
+        Scanner sc = new Scanner(System.in);
+        s = sc.nextLine();
+        h = sc.nextLine();
+        System.out.println(h);
+        System.out.println(s);
+    }
+}
